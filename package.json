@@ -6,8 +6,8 @@
     "scripts": {
         "clean": "rm -rf _dist/*",
         "lint:css": "npx stylelint 'css/**/*.css'",
-        "build:img": "mkdir -p _dist/img && rm -rf _dist/img/* && cp -r img/* _dist/img/",
-        "build:css": "mkdir -p _dist/css && npx postcss css/all.css --dir _dist/css --no-map",
+        "build:img": "mkdir -p _dist/img && rm -rf _dist/img/* && cp -r img _dist/",
+        "build:css": "mkdir -p _dist/css && touch css/all.css && npx postcss css/all.css --dir _dist/css --no-map",
         "build:html": "npx @11ty/eleventy",
         "build": "npm run clean && npm-run-all build:**",
         "watch:css": "chokidar 'css/**/*.css' -c 'npm run build:css'",
