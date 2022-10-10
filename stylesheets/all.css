@@ -19,32 +19,42 @@ header {
     height: 100%;
     width: 100%;
     color: #fff;
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: 1fr auto;
+}
+
+.hgroup-wrapper {
     display: flex;
+    padding: 3rem 1rem 1rem;
 }
 
 .hgroup {
-    padding: 3rem 1rem 1rem;
     max-width: 27rem;
 }
 
 @media (--sm-screen) {
-    header {
+    .hgroup-wrapper {
         align-items: center;
         justify-content: center;
     }
-    .hgroup {
-        padding: 0;
+    .hgroup-wrapper {
+        padding: 1rem;
     }
+}
+
+.hgroup a i {
+    display: inline-block;
+    background: url(../images/arrow.png) no-repeat;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 0.7rem;
 }
 
 header h1 {
     text-transform: uppercase;
-}
-
-header nav {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-bottom: 1rem;
 }
 
 header nav ul {
