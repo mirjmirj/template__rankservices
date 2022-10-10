@@ -7,12 +7,11 @@
 @custom-media --md-screen (width >= 40rem); /* 640px */
 @custom-media --lg-screen (width >= 50rem); /* 800px */
 
-
 /* --- Header --- */
 html,
 body {
     height: 100%;
-    font-family: baskerville;
+    font-family: baskerville, serif;
 }
 
 header {
@@ -98,8 +97,31 @@ section > h2 {
     text-align: center;
 }
 
-section p {
+section p,
+section ol {
+    font-size: 1.1rem;
     line-height: 1.4;
+}
+
+@media (--md-screen) {
+    section {
+        padding: 3rem;
+    }
+
+    section > h2 {
+        font-size: 2rem;
+    }
+
+    section p,
+    section ol {
+        font-size: 1.4rem;
+    }
+}
+
+@media (--lg-screen) {
+    section {
+        padding: 4rem 15%;
+    }
 }
 
 /* --- Section: What we do --- */
@@ -107,7 +129,7 @@ section p {
     h3 {
         font-weight: bold;
     }
-    
+
     ol {
         line-height: 1.4;
     }
@@ -117,6 +139,7 @@ section p {
 #comment {
     background: #000;
     text-align: center;
+
     & h2 {
         margin: 0;
         padding: 3rem 0;
@@ -126,7 +149,15 @@ section p {
     }
 
     & span {
-        color: #7AFF63;
+        color: #7aff63;
+    }
+}
+
+@media (--md-screen) {
+    #comment h2 {
+        font-size: 5rem;
+        max-width: 23rem;
+        margin: 0 auto;
     }
 }
 
