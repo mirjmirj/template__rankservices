@@ -12,6 +12,7 @@
 html,
 body {
     height: 100%;
+    font-family: baskerville;
 }
 
 header {
@@ -86,4 +87,58 @@ header a {
     }
 }
 
+/* --- Section: General --- */
+
+section {
+    padding: 2rem 1rem;
+}
+
+section > h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+section p {
+    line-height: 1.4;
+}
+
 /* --- Section: What we do --- */
+#about {
+    h3 {
+        font-weight: bold;
+    }
+    
+    ol {
+        line-height: 1.4;
+    }
+}
+
+/* --- Section: comment --- */
+#comment {
+    background: #000;
+    text-align: center;
+    & h2 {
+        margin: 0;
+        padding: 3rem 0;
+        font-size: 4.4rem;
+        font-style: italic;
+        color: #fff;
+    }
+
+    & span {
+        color: #7AFF63;
+    }
+}
+
+/* --- Section: specialist --- */
+#specialist {
+    ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ol li {
+        margin: 2rem 0;
+    }
+}
