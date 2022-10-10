@@ -165,11 +165,42 @@ section ol {
 #specialist {
     ol {
         list-style: none;
+        text-align: center;
         margin: 0;
         padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
     }
 
-    ol li {
-        margin: 2rem 0;
+    ol li::before {
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    ol li:nth-child(1)::before {
+        content: "1";
+    }
+
+    ol li:nth-child(2)::before {
+        content: "2";
+    }
+
+    ol li:nth-child(3)::before {
+        content: "3";
+    }
+
+    ol li:nth-child(4)::before {
+        content: "4";
+    }
+}
+
+@media (--lg-screen) {
+    #specialist ol {
+        margin-top: 4rem;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.1rem;
+        grid-gap: 2rem 1rem;
     }
 }
