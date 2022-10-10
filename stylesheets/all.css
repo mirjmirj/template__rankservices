@@ -1,3 +1,71 @@
+/* --- Base --- */
+@import "base/modern-normalize.css" layer(base);
+@import "base/resets.css" layer(base);
+@import "base/typography.css" layer(base);
+
+@custom-media --sm-screen (width >= 30rem); /* 480px */
+@custom-media --md-screen (width >= 40rem); /* 640px */
+@custom-media --lg-screen (width >= 50rem); /* 800px */
+
+html,
+body {
+  height: 100%;
+}
+
+header {
+    position: relative;
+    background: url(../images/main-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+}
+
+.hgroup {
+    padding: 3rem 1rem 1rem;
+    max-width: 27rem;
+}
+
+@media (--sm-screen) {
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+    .hgroup {
+        padding: 0;
+    }
+}
+
 header h1 {
     text-transform: uppercase;
+}
+
+header nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+        color: #ddd;
+    }
 }
