@@ -84,7 +84,6 @@ nav a {
     top: 0;
     left: 0;
     right: 0;
-
     background: rgb(0 0 0);
     background: rgb(0 0 0 / 90%);
 }
@@ -92,15 +91,6 @@ nav a {
 .sticky-nav ul li {
     font-size: 0.8rem;
     padding: 0.7rem;
-}
-
-.sticky-nav > li {
-    height: 50px;
-    line-height: 50px;
-
-    &:hover {
-        background-color: #111;
-    }
 }
 
 @media (--sm-screen) {
