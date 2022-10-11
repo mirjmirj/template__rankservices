@@ -50,14 +50,14 @@ header h1 {
 }
 
 header nav ul,
-.sticky-nav ul {
+#sticky-nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 header nav ul li,
-.sticky-nav ul li {
+#sticky-nav ul li {
     text-transform: uppercase;
     font-weight: bold;
     padding: 0.8rem;
@@ -76,19 +76,18 @@ nav a {
     }
 }
 
-.sticky-nav {
+#sticky-nav {
     transition: top 0.2s;
     z-index: 10000000;
     position: fixed;
     top: -36px;
-    top: 0;
     left: 0;
     right: 0;
     background: rgb(0 0 0);
     background: rgb(0 0 0 / 90%);
 }
 
-.sticky-nav ul li {
+#sticky-nav ul li {
     font-size: 0.8rem;
     padding: 0.7rem;
 }
@@ -100,7 +99,7 @@ nav a {
         padding: 1rem;
     }
 
-    .sticky-nav ul li {
+    #sticky-nav ul li {
         font-size: 0.9rem;
         padding: 0.8rem;
     }
