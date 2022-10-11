@@ -7,11 +7,16 @@
 @custom-media --md-screen (width >= 40rem); /* 640px */
 @custom-media --lg-screen (width >= 50rem); /* 800px */
 
+:root {
+    --serif: baskerville, georgia, serif;
+    --sans-serif: avenir, helvetica, sans-serif;
+}
+
 /* --- Header --- */
 html,
 body {
     height: 100%;
-    font-family: baskerville, serif;
+    font-family: var(--serif);
 }
 
 header {
@@ -45,7 +50,7 @@ header {
 }
 
 header h1 {
-    font-family: avenir, sans-serif;
+    font-family: var(--sans-serif);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -61,7 +66,7 @@ header nav ul,
 header nav ul li,
 #sticky-nav ul li {
     text-transform: uppercase;
-    font-family: avenir, sans-serif;
+    font-family: var(--sans-serif);
     font-weight: bold;
     padding: 0.8rem;
     font-size: 0.95rem;
