@@ -46,7 +46,7 @@ header {
     width: 28px;
     height: 28px;
     vertical-align: middle;
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
 }
 
 header h1 {
@@ -56,10 +56,13 @@ header h1 {
     margin-bottom: 1rem;
 }
 
+header nav ul {
+    flex-flow: row wrap;
+}
+
 header nav ul,
 #sticky-nav ul {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-around;
 }
 
@@ -88,11 +91,17 @@ nav a {
     transition: top 0.2s;
     z-index: 10000000;
     position: fixed;
-    top: -36px;
+    top: -2.25rem;
     left: 0;
     right: 0;
     background: rgb(0 0 0);
     background: rgb(0 0 0 / 90%);
+}
+
+#sticky-nav ul {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
 }
 
 #sticky-nav ul li {

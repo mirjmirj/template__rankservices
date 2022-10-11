@@ -19,7 +19,7 @@
         if ($(window).scrollTop() > headerHeight && delta >= 0) {
             $('#sticky-nav').css({ top: '0' });
         } else {
-            $('#sticky-nav').css({ top: '-37px' });
+            $('#sticky-nav').css({ top: '-2.25rem' });
         }
     }); 
 })(jQuery, window);
